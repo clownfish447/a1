@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Webpage</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <style>
+    #info {
+      text-align: center;
+    }
+    #photo {
+      border: 2px solid black;
+      border-radius: 50%;
+      max-width: 200px;
+      margin: 20px;
+    }
+    #buttons {
+      text-align: center;
+      margin: 20px;
+    }
+  </style>
+  <script>
+    $(document).ready(function(){
+      // 初始設定
+      $("#info").html("<p>學號：41018114</p><p>姓名：陳玉生</p>");
+      $("#photo").attr("src", "123.jpg");
+
+      // 功能2
+      $("#btnFontColor").click(function(){
+        $("#info p").css({"color": "blue", "font-size": "20px"});
+      });
+
+      // 功能3
+      $("#btnStylePhoto").click(function(){
+        $("#photo").css({"border": "4px solid red", "border-radius": "50%"});
+      });
+
+      // 功能4
+      $("#btnChangePhoto").click(function(){
+        $("#photo").attr("src", "link_to_another_photo.jpg");
+      });
+
+      // 功能5
+      $("#btnFade").click(function(){
+        $("#photo").fadeToggle(1000); // 1000 milliseconds
+      });
+    });
+  </script>
+</head>
+<body>
+  <div id="info"></div>
+  <img id="photo" src="" alt="Selfie">
+  <div id="buttons">
+    <button id="btnFontColor">調整字體和顏色</button>
+    <button id="btnStylePhoto">調整大頭照樣式</button>
+    <button id="btnChangePhoto">換圖</button>
+    <button id="btnFade">淡入/淡出</button>
+  </div>
+  <div>
+  <p>答案連結：<a href="link_to_answer_html.html" target="_blank">原始 HTML 檔</a></p>
+  <p>答案連結：<a href="link_to_answer_js.js" target="_blank">原始 JS 檔</a></p>
+  <p>HTML 代碼：<textarea rows="10" cols="50" readonly>&lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title>Your Webpage&lt;/title&gt;
+    &lt;script src="https://code.jquery.com/jquery-3.6.4.min.js"&gt;&lt;/script&gt;
+    &lt;style&gt;
+      #info {
+        text-align: center;
+      }
+      #photo {
+        border: 2px solid black;
+        border-radius: 50%;
+        max-width: 200px;
+        margin: 20px;
+      }
+      #buttons {
+        text-align: center;
+        margin: 20px;
+      }
+    &lt;/style&gt;
+    &lt;script&gt;
+      $(document).ready(function(){
+        // 初始設定
+        $("#info").html("&lt;p&gt;學號：41018114&lt;/p&gt;&lt;p&gt;姓名：陳玉生&lt;/p&gt;");
+        $("#photo").attr("src", "123.jpg");
+
+        // 功能2
+        $("#btnFontColor").click(function(){
+          $("#info p").css({"color": "blue", "font-size": "20px"});
+        });
+
+        // 功能3
+        $("#btnStylePhoto").click(function(){
+          $("#photo").css({"border": "4px solid red", "border-radius": "50%"});
+        });
+
+        // 功能4
+        $("#btnChangePhoto").click(function(){
+          $("#photo").attr("src", "link_to_another_photo.jpg");
+        });
+
+        // 功能5
+        $("#btnFade").click(function(){
+          $("#photo").fadeToggle(1000); // 1000 milliseconds
+        });
+      });
+    &lt;/script&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="info"&gt;&lt;/div&gt;
+    &lt;img id="photo" src="" alt="Selfie"&gt;
+    &lt;div id="buttons"&gt;
+      &lt;button id="btnFontColor"&gt;調整字體和顏色&lt;/button&gt;
+      &lt;button id="btnStylePhoto"&gt;調整大頭照樣式&lt;/button&gt;
+      &lt;button id="btnChangePhoto"&gt;換圖&lt;/button&gt;
+      &lt;button id="btnFade"&gt;淡入/淡出&lt;/button&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;p&gt;答案連結：&lt;a href="link_to_answer_html.html" target="_blank"&gt;原始 HTML 檔&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;答案連結：&lt;a href="link_to_answer_js.js" target="_blank"&gt;原始 JS 檔&lt;/a&gt;&lt;/p&gt;
+      &lt;p&gt;HTML 代碼：&lt;textarea rows="10" cols="50" readonly&gt;...&lt;/textarea&gt;&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;</textarea></p>
+  <p>JS 代碼：<textarea rows="10" cols="50" readonly>...</textarea></p>
+</div>
+
+</body>
+</html>
